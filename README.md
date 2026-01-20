@@ -17,7 +17,7 @@
 
 资本资产定价模型（Capital Asset Pricing Model, CAPM）是现代金融理论中最为重要的理论之一，它描述了资产预期收益率与市场风险之间的关系。CAPM模型认为，资产的预期收益率等于无风险收益率加上市场风险溢价，而市场风险溢价则与资产的市场贝塔系数成正比。
 
-![](result\conclusion\CAPM_visualization.png){width="600"}
+<img src="https://github.com/Greenmilkvvv/CAPM-A-Share-Empirical/blob/main/result/conclusion/CAPM_visualization.png" alt="图1: 资本资产定价模型示意" width="70%" height="70%"/>
 
 项目参照 Black‑Jensen‑Scholes（1972）与 Fama‑MacBeth（1973）两种经典计量框架, 基于1995‑2024年共三十年中国A股日度数据, 使用 `Python` 对 CAPM 在中国股市的有效性进行系统再检验. 
 
@@ -25,7 +25,7 @@
 
 我们对原始数据进行预处理, 最终得到了 30 年间个股的日超额收益率序列以及市场组合(使用上证综指收益率代理)的**日度超额收益率**序列. **所以, 下面讨论的都是超额收益率.**
 
-![](result\conclusion\上市公司数量与上证指数.png){width="600"}
+<img src="https://github.com/Greenmilkvvv/CAPM-A-Share-Empirical/blob/main/result/conclusion/%E4%B8%8A%E5%B8%82%E5%85%AC%E5%8F%B8%E6%95%B0%E9%87%8F%E4%B8%8E%E4%B8%8A%E8%AF%81%E6%8C%87%E6%95%B0.png" alt="图2: 上市公司数量与各轮行情" width="70%" height="70%"/>
 
 ### Black‑Jensen‑Scholes（1972）方法
 
@@ -44,9 +44,9 @@ $r_{p_j,t} - r_{ft} = \gamma_0 + \gamma_1 \beta_{p_j,t} + \varepsilon_{p_j,t}, \
 
 1. **核心假设检验**: 对于任一个组合, 若符合 CAPM 模型, 则 $\gamma_0$ 不应显著非0, 而 $\gamma_1$ 应显著为正. 
 
-![](result\conclusion\全样本SML.png){width="600"}
+<img src="https://github.com/Greenmilkvvv/CAPM-A-Share-Empirical/blob/main/result/conclusion/%E5%85%A8%E6%A0%B7%E6%9C%ACSML.png" alt="图3: 全样本横截面回归的证券市场线" width="70%" height="70%"/>
 
-![](result\conclusion\子样本SML.png){width="600"}
+<img src="https://github.com/Greenmilkvvv/CAPM-A-Share-Empirical/blob/main/result/conclusion/%E5%AD%90%E6%A0%B7%E6%9C%ACSML.png" alt="图4: 子样本横截面回归的证券市场线" width="70%" height="70%"/>
 
 ### Fama‑MacBeth（1973）方法
 
